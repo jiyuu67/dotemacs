@@ -1,0 +1,9 @@
+.private*
+/conf.el
+emojis/
+/history
+/ido.last
+/projectile-bookmarks.eld
+/smex-items
+elisp/
+url/
