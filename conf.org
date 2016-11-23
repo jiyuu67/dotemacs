@@ -440,11 +440,13 @@ Custom Entry Launchers ([[http://nullprogram.com/blog/2013/11/26/][credit]])
   (defun elfeed-livestream-video-best ()
     (interactive)
     (let ((entry (elfeed-search-selected :single)))
+      (execute-kbd-macro (kbd "r"))
       (my/livestream-video-best (elfeed-entry-link entry))))
 
   (defun elfeed-livestream-video-medium ()
     (interactive)
     (let ((entry (elfeed-search-selected :single)))
+      (execute-kbd-macro (kbd "r"))
       (my/livestream-video-medium (elfeed-entry-link entry))))
 
   (define-key elfeed-search-mode-map "l" #'elfeed-livestream-video-best)
